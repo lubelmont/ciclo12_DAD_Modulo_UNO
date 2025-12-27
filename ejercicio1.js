@@ -46,3 +46,7 @@ let puedevotar = esMayorDeEdad && tieneINE //Operación AND los dsos deben ser t
 console.log("¿Es mayor de edad?", esMayorDeEdad);
 console.log("¿Tiene INE?", tieneINE);
 console.log("¿Puede votar?", puedevotar);
+
+
+
+
