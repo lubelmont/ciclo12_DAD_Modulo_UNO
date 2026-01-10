@@ -37,3 +37,22 @@ console.log("=== FIN DEL EJERCICIO 2 ===");
 
 
 
+//Ejercicio 1 Condicionales
+console.log("=== EJERCICIO 1: CONDICIONALES multiples ===");
+//Puede puedo hacer servicio militar ? 
+const edadCadete = 19;
+const esHombre = false;
+
+// Operacion AND (&&) Ambos deben ser verdaderos
+// operacion OR (||) Solo uno debe ser verdadero
+// operacion NOT (!)
+
+if (edadCadete >= 18 || esHombre) {
+    console.log("Puede hacer servicio militar");
+} 
+else 
+{
+    console.log("No puede hacer servicio militar");
+}
+
+console.log("=== FIN DEL EJERCICIO 1 ===");
