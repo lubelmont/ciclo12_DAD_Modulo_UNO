@@ -18,11 +18,27 @@ Reglas:
 
 console.log("=== EJERCICIO: Cálculo de Descuentos ===");
 
+function fncGranTotal(precioOriginal, porcentajeDescuentoAplicar) {
+    
+    montoDescuento = precioOriginal * (porcentajeDescuentoAplicar / 100);
+    subtotal = precioOriginal - montoDescuento;
+
+    total = subtotal * 1.10; // Aplicando IVA del 10%
+
+    return total;
+}
+
 
 
 let precioOriginal = process.argv[2];
 let descuento = process.argv[3];
+let precioFinal = 0;
 
 
 console.log(precioOriginal);
-console.log(descuento); 
+console.log(descuento);
+precioFinal = fncGranTotal(precioOriginal, descuento);
+
+console.log("El precio final con descuento e IVA es:", precioFinal);
+
+console.log("=== FIN DEL EJERCICIO ===");

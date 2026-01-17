@@ -15,3 +15,8 @@ console.log("Valor de formaAntigua:", formaAntigua);
 
 formaAntigua = "Hola de nuevo";
 console.log("Valor de formaAntigua después de reasignar:", formaAntigua);
+
+
+
+
+
