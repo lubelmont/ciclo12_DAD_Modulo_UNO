@@ -13,10 +13,48 @@ calificacionesDos = [85, 90, 78];
 calificacionesTres = [65, 70, 72, 68, 60];
 
 */
-let calificaciones = [65, 70, 72, 68, 60];
-console.log("Calificaciones:", calificaciones);
+
+let calificacionesTres = [85, 90, 78];
+
+console.log("Calificaciones:", calificacionesTres);
+
+
 let resultado = 0;
+let promedio;
+let calificacion;
+
+for (let i = 0; i < calificacionesTres.length; i++) {
+    
+    resultado = resultado + calificacionesTres[i]; 
+    
+}
+
+console.log("Suma de calificaciones:", resultado);
+
+promedio = Math.round(resultado / calificacionesTres.length);
+
+if (promedio >= 90) {
+    calificacion = 'A';
+}
+else if (promedio >= 80 && promedio < 90) {
+    calificacion = 'B';
+}
+else if (promedio >= 70 && promedio < 80) {
+    calificacion = 'C';
+}
+else if (promedio >= 60 && promedio < 70) {
+    calificacion = 'D';
+}
+else if (promedio >= 0 && promedio < 60) {
+    calificacion = 'F';
+}
+else { 
+    calificacion = 'Calificación inválida';
+}
 
 
 // TODO: Muestra un mensaje: "Mi promedio es: [resultado]"
-console.log(`Mi promedio es: ${resultado}`);
+console.log(`Mi calificación es: ${calificacion}, con un promedio de: ${promedio}`);
+
+
+
